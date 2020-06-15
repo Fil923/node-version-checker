@@ -1,0 +1,11 @@
+{
+  "name": "node-versione-checker",
+  "version": "1.0.0",
+  "description": "script to check node version on running os",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fil923",
+  "license": "ISC"
+}
