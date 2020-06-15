@@ -1,11 +1,18 @@
 {
   "name": "node-versione-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "script to check node version on running os",
   "main": "index.js",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=10.19.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Fil923",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "semver": "^7.3.2"
+  }
 }
