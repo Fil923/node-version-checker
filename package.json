@@ -1,6 +1,6 @@
 {
   "name": "node-versione-checker",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "script to check node version on running os",
   "repository": "https://github.com/Fil923/node-version-checker",
   "main": "index.js",
