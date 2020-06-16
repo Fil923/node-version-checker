@@ -6,14 +6,27 @@
 "use strict";
 //npm modules
 const semver = require("semver");
+const {argv} = require('yargs')
 const path = require("path");
 const fs = require("fs");
-const { engines } = require("./package");
+var packageJson;
+var nvmrc
+
+if(argv.packageJsonFile != null) {
+    packageJson = require(argv.packageJsonFile);
+} else {
+    throw new Error("No package.json file found!.")
+}
+
+if(argv.nvmrcFilePath != null) {
+    nvmrc = path.resolve(argv.nvmrcFilePath)
+} else {
+    throw new Error("No nvmrc file found!.")
+}
 
 //local const
 const regex = "(\\d+\\.\\d+\\.\\d+)";
-const nvmrc = path.resolve(".nvmrc");
-const version = engines.node;
+const version = packageJson.engines.node;
 const versionparsed = version.trim().match(regex);
 
 if (!semver.satisfies(process.version, version)) {

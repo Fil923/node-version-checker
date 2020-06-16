@@ -1,0 +1,15 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test node version checker",
+  "main": "index.js",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=10.19.0"
+  },
+  "scripts": {
+    "test": "npx node-version-checker --packageJsonFile=./package.json --nvmrcFilePath=.nvmrc"
+  },
+  "author": "",
+  "license": "ISC"
+}
