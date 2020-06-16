@@ -4,6 +4,14 @@
   "description": "script to check node version on running os",
   "repository": "https://github.com/Fil923/node-version-checker",
   "main": "index.js",
+  "keywords": [
+    "npm",
+    "node",
+    "npx",
+    "check",
+    "version",
+    "package.json"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
