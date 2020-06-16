@@ -8,7 +8,7 @@
     "node": ">=10.19.0"
   },
   "scripts": {
-    "test": "npx node-versions-checker --packageJsonFile=./package.json --nvmrcFilePath=.nvmrc"
+    "test": "npx node-version-checker --packageJsonFile=./package.json --nvmrcFilePath=.nvmrc"
   },
   "author": "",
   "license": "ISC"
